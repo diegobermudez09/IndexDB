@@ -24,7 +24,7 @@
             const db = e.target.result; //el resultado de lo que se ejecuta de la funcion (la bd)
 
             const objectStore = db.createObjectStore('crm', {keyPath: 'id', autoIncrement:true}) // se crea la tabla
-            objectStore.createIndex('nombre', 'nombre', {unique: false}); // se crea la columna de la tabla
+            objectStore.createIndex('nombre', ' ', {unique: false}); // se crea la columna de la tabla
             objectStore.createIndex('email', 'email', {unique: true}); // se crea la columna de la tabla
             objectStore.createIndex('telefono', 'telefono', {unique: false}); // se crea la columna de la tabla
             objectStore.createIndex('empresa', 'empresa', {unique: false}); // se crea la columna de la tabla
